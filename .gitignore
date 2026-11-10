@@ -17,3 +17,4 @@ error_log
 *.bak
 /tmp/
 
+database.sql
