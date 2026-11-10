@@ -1,5 +1,6 @@
 <?php
-// PDO Database Connection
+// PDO Database Connection Template
+// Copy this file to 'db.php' and fill in your actual credentials.
 require_once __DIR__ . '/constants.php';
 
 class Database {
@@ -23,7 +24,6 @@ class Database {
             try {
                 self::$pdo = new PDO($dsn, self::$user, self::$pass, $options);
             } catch (PDOException $e) {
-                // If 127.0.0.1 fails, attempt localhost or socket
                 try {
                     $dsnFallback = "mysql:host=localhost;dbname=" . self::$db . ";charset=" . self::$charset;
                     self::$pdo = new PDO($dsnFallback, self::$user, self::$pass, $options);
@@ -39,4 +39,3 @@ class Database {
 function get_db(): PDO {
     return Database::getConnection();
 }
-
