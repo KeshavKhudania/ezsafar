@@ -19,3 +19,4 @@ error_log
 
 database.sql
 config/db.php
+config/constants.php

@@ -1,5 +1,6 @@
 <?php
-// Site Constants & Global Configuration
+// Site Constants & Global Configuration Template
+// Copy this file to 'constants.php' and adjust settings as needed.
 if (!defined('APP_INIT')) {
     define('APP_INIT', true);
 }
@@ -19,4 +20,3 @@ define('APP_CURRENCY', '₹');
 // Upload directory
 define('UPLOAD_DIR', __DIR__ . '/../assets/uploads/');
 define('UPLOAD_URL', BASE_URL . '/assets/uploads/');
-

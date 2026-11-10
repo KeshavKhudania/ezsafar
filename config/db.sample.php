@@ -39,3 +39,4 @@ class Database {
 function get_db(): PDO {
     return Database::getConnection();
 }
+
