@@ -40,6 +40,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Admin Login | <?= APP_NAME ?></title>
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= BASE_URL ?>/assets/images/favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="<?= BASE_URL ?>/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= BASE_URL ?>/assets/images/apple-touch-icon.png"/>
+
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -61,11 +66,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex items-center justify-center p-4">
     <div class="max-w-md w-full bg-slate-800/90 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-8 shadow-2xl">
         <div class="text-center mb-8">
-            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-white mx-auto shadow-lg mb-3">
-                <span class="material-symbols-outlined text-3xl">admin_panel_settings</span>
-            </div>
-            <h1 class="text-2xl font-black tracking-tight text-white"><?= APP_NAME ?> Administration</h1>
-            <p class="text-xs text-slate-400 mt-1">Mobility Operations &amp; Inventory Management</p>
+            <img src="<?= BASE_URL ?>/assets/images/logo-card.png" alt="EzSafar Logo" class="w-20 h-20 mx-auto rounded-3xl shadow-xl mb-3 object-contain border border-slate-700/60"/>
+            <h1 class="text-2xl font-black tracking-tight text-white">EZ<span class="text-orange-400">Safar</span> Control Center</h1>
+            <p class="text-xs text-slate-400 mt-1">Sign in with your staff or administrator credentials</p>
         </div>
 
         <?php if (!empty($error)): ?>

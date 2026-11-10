@@ -18,3 +18,4 @@ error_log
 /tmp/
 
 database.sql
+config/db.php

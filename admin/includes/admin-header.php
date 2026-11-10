@@ -9,6 +9,11 @@ $adminCurrentPage = basename($_SERVER['PHP_SELF']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title><?= isset($adminTitle) ? htmlspecialchars($adminTitle) . ' | ' . APP_NAME . ' Admin' : APP_NAME . ' Admin Console' ?></title>
     
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= BASE_URL ?>/assets/images/favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="<?= BASE_URL ?>/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= BASE_URL ?>/assets/images/apple-touch-icon.png"/>
+
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,12 +42,10 @@ $adminCurrentPage = basename($_SERVER['PHP_SELF']);
             <!-- Admin Brand -->
             <div class="p-6 border-b border-slate-800 flex items-center justify-between">
                 <a href="<?= BASE_URL ?>/admin/index.php" class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold shadow-md">
-                        <span class="material-symbols-outlined text-2xl">speed</span>
-                    </div>
+                    <img src="<?= BASE_URL ?>/assets/images/logo-card.png" alt="EzSafar Admin" class="w-10 h-10 rounded-xl object-contain shadow-md shrink-0"/>
                     <div>
-                        <div class="font-extrabold text-white text-lg tracking-tight">Ez<span class="text-primary-container">Safar</span></div>
-                        <div class="text-[10px] text-slate-400 uppercase tracking-widest font-semibold">Jind Control Hub</div>
+                        <div class="font-black text-white text-lg tracking-tight">EZ<span class="text-orange-400">Safar</span></div>
+                        <div class="text-[10px] text-slate-400 uppercase tracking-widest font-semibold">Admin Hub • Jind</div>
                     </div>
                 </a>
             </div>

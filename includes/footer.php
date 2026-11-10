@@ -17,12 +17,10 @@ $fCity = get_setting('primary_city', HUB_PRIMARY_CITY);
             <!-- Brand Column -->
             <div class="lg:col-span-2 flex flex-col gap-4">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-white shadow-md">
-                        <span class="material-symbols-outlined text-2xl">directions_car</span>
-                    </div>
+                    <img src="<?= BASE_URL ?>/assets/images/logo-card.png" alt="EzSafar Logo" class="w-12 h-12 rounded-2xl object-contain shadow-sm border border-outline-variant/15 shrink-0"/>
                     <div>
                         <div class="flex items-center gap-1.5">
-                            <span class="text-2xl font-extrabold text-on-surface"><?= htmlspecialchars($fSiteName) ?></span>
+                            <span class="text-2xl font-black text-on-surface">EZ<span class="text-secondary-container">Safar</span></span>
                             <span class="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed"><?= htmlspecialchars($fCity) ?></span>
                         </div>
                         <span class="text-xs text-on-surface-variant"><?= htmlspecialchars($fTagline) ?></span>

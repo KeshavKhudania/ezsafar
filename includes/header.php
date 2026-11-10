@@ -43,6 +43,11 @@ $phoneWhatsapp = get_setting('contact_whatsapp', PHONE_WHATSAPP);
     <meta name="robots" content="<?= htmlspecialchars($metaRobots) ?>"/>
     <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl) ?>"/>
 
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= BASE_URL ?>/assets/images/favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="<?= BASE_URL ?>/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= BASE_URL ?>/assets/images/apple-touch-icon.png"/>
+
     <!-- Open Graph / Facebook / WhatsApp Preview -->
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="<?= htmlspecialchars($metaTitle) ?>"/>
@@ -199,15 +204,13 @@ $phoneWhatsapp = get_setting('contact_whatsapp', PHONE_WHATSAPP);
             <!-- Brand Logo -->
             <div class="flex items-center gap-8">
                 <a href="<?= BASE_URL ?>/index.php" class="flex items-center gap-3 group">
-                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-white shadow-md shadow-primary/20 group-hover:scale-105 transition-transform">
-                        <span class="material-symbols-outlined text-2xl font-bold">directions_car</span>
-                    </div>
+                    <img src="<?= BASE_URL ?>/assets/images/logo-card.png" alt="EzSafar Logo" class="w-12 h-12 rounded-2xl object-contain shadow-sm border border-outline-variant/15 group-hover:scale-105 transition-transform shrink-0"/>
                     <div>
                         <div class="flex items-center gap-1.5">
-                            <span class="text-2xl font-extrabold tracking-tight text-on-surface">Ez<span class="text-primary">Safar</span></span>
+                            <span class="text-2xl font-black tracking-tight text-on-surface">EZ<span class="text-secondary-container">Safar</span></span>
                             <span class="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed">JIND</span>
                         </div>
-                        <span class="text-[11px] font-medium text-on-surface-variant block -mt-0.5">Mobility Platform</span>
+                        <span class="text-[11px] font-medium text-on-surface-variant block -mt-0.5">Automotive Mobility</span>
                     </div>
                 </a>
 
