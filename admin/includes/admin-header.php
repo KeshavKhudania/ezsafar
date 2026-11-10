@@ -91,6 +91,11 @@ $adminCurrentPage = basename($_SERVER['PHP_SELF']);
                     <span class="material-symbols-outlined text-[20px]">settings</span>
                     <span>Website &amp; SEO Settings</span>
                 </a>
+
+                <a href="<?= BASE_URL ?>/admin/admin-users.php" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all <?= ($adminCurrentPage === 'admin-users.php') ? 'bg-primary text-white shadow-md' : 'text-slate-400 hover:text-white hover:bg-slate-800' ?>">
+                    <span class="material-symbols-outlined text-[20px]">manage_accounts</span>
+                    <span>Admin Team</span>
+                </a>
             </nav>
         </div>
 

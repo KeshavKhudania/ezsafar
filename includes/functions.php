@@ -7,6 +7,8 @@ if (!ob_get_level()) {
     ob_start();
 }
 
+date_default_timezone_set('Asia/Kolkata');
+
 require_once __DIR__ . '/../config/constants.php';
 require_once __DIR__ . '/../config/db.php';
 
@@ -107,6 +109,17 @@ function get_all_settings(): array {
         }
     }
     return $settingsCache;
+}
+
+function get_client_ip(): string {
+    $headers = ['HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'REMOTE_ADDR'];
+    foreach ($headers as $h) {
+        if (!empty($_SERVER[$h])) {
+            $ips = explode(',', $_SERVER[$h]);
+            return trim($ips[0]);
+        }
+    }
+    return '127.0.0.1';
 }
 
 function get_setting(string $key, string $default = ''): string {

@@ -20,3 +20,4 @@ define('APP_CURRENCY', '₹');
 // Upload directory
 define('UPLOAD_DIR', __DIR__ . '/../assets/uploads/');
 define('UPLOAD_URL', BASE_URL . '/assets/uploads/');
+
